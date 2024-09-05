@@ -1,0 +1,114 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% load bootstrap5 %}
+{% block head %}
+<title>Home</title>
+{% endblock %}
+
+{% block body %}
+
+<div class="background-lol">
+  <div class="container-fluid fs-5 fs-md-2 text-center">
+      <p class="display-10 text-white">Experience the rich culture of Vineyard Velvet, where every bite offers a taste of Italian tradition</p>
+      <a href="{% url 'booking' %}" class="btn btn-primary btn-lg" style="margin-top: 200px; margin-bottom: -100px;">Reserve a table</a>
+  </div>
+</div>
+
+<div class="container mt-4">
+  <div class="row">
+      <!-- Latte -->
+      <div class="col-md-4">
+        
+          <div class="card-custom mb-3">
+              <div class="card-body">
+                  <img src="{% static 'images/cap2.jpeg' %}" class="img-fluid" alt="Latte" style="border: 1px solid white;">
+                  
+              </div>
+              <p class="blue-coffee-text" style="color: white;"><b>Latte</b></p>
+          </div>
+      </div>
+      <!-- Espresso -->
+      <div class="col-md-4">
+          <div class="card-custom mb-3">
+              <div class="card-body">
+                  <img src="{% static 'images/whitecupCasa.png' %}" class="img-fluid" alt="Espresso" style="border: 1px solid white;">
+                  
+              </div>
+              <p class="blue-coffee-text" style="color: white;"><b>Espresso</b></p>
+          </div>
+      </div>
+      <!-- Cappuccino -->
+      <div class="col-md-4">
+          <div class="card-custom mb-3">
+              <div class="card-body">
+                  <img src="{% static 'images/two caps.jpg' %}"  alt="Cappuccino" style="border: 1px solid white;">
+                  
+              </div>
+              <p class="blue-coffee-text" style="color: white;"><b>Cappuccino</b></p>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div id="about" class="image-container" style="position: relative; text-align: center; color: white; ">
+  <div class="background-overlay">
+
+  </div>
+  <!--img src="Images/sit_and_relax.jpg" alt="Serene Cafe Setting" style="width: 100%; height: auto;"-->
+  <div class="about-text" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; background: rgba(0, 0, 0, 0.0); padding: 20px; border-radius: 10px;">            
+      <div class="card-custom3" style="text-align: center; font-size: 26pt; padding: 10px 50px;">
+          <h1 style="box-sizing: border-box;
+          font-size: 2rem;
+          line-height: 1.6; ">About Us</h1>
+      </div>
+      
+      <div class="card-custom4">
+          <p>
+              Nestled in the heart of <b>Morris Park,</b> a neighborhood rich with Italian heritage;<br> <b>La Casa Del Caffe</b> has been serving the community with exceptional espresso since the late 1990s. Our founder, <b>Anna Agovino,</b> discovered her unique talent for espresso making quite by accident, but soon became the soul of our café.
+          </p>
+          <p>
+              Anna's signature touch and meticulous attention to every detail of espresso making have turned our modest café into a landmark for coffee lovers. Known for her magic wrist and the thick creamy head of her espresso, Anna's dedication ensures every cup is a testament to <b>traditional Italian coffee</b> making. It's not just coffee we're brewing; it's a legacy.
+          </p>
+          <h2 style="font-style: italic; padding-top: 50px; padding-bottom: 10px;"><b>Commitment to Excellence</b></h2>
+
+          <p style="font-style: italic;"> Each espresso served is a celebration of rich flavors and the joy of Italian coffee, crafted with love and precision. Join us for a taste of history and experience the best coffee in New York City, as endorsed by our loyal patrons and connoisseurs alike.
+          </p>
+      </div>
+      
+  </div>
+</div>
+
+
+<div id="location" class="container mt-4">
+  <div class="row my-4 bg-dark text-light">
+      
+      <div class="col-12 col-md-4 img-stuff">
+          <img src="{% static 'Images/Googlestaticmap.png' %}" alt="Location Map" class="img-fluid">
+      </div>
+      
+      
+      <div class="col-12 col-md-4 img-stuff">
+        <!-- IGNORE -->
+
+      </div>
+      
+      
+      <div class="col-12 col-md-4 img-stuff">
+          <h2>Location And Office Hours</h2>
+          <p><strong>La Casa Del Caffe</strong><br>
+             1036 Morris Park Ave,<br>
+             Bronx, NY 10461</p>
+          <h2>Hours of Operation:</h2>
+          <p>Monday - Saturday: 7:00 AM - 11:00 PM<br>
+             Sunday: 7:00 AM - 2:30 PM, 7:00 PM - 11:00 PM<br>
+             Visit us to experience the best coffee in town, or order online for your daily coffee fix!
+          </p>
+          
+      </div>
+  </div>
+</div>
+
+
+
+
+{% endblock %}
